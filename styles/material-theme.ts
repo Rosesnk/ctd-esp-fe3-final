@@ -1,7 +1,9 @@
 import {createTheme} from "@mui/material";
 
+
 export const theme = createTheme({
     typography: {
-        fontFamily: 'Roboto, sans-serif'
-    },
+        fontFamily: 'Agdasima, sans-serif',
+        fontWeightBold: "bold",
+    },    
 });

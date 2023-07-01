@@ -11,9 +11,9 @@ import {
 
 const serverError = 'error'
 export const invalidAddress = 'invalid'
-export const validCard = '4242 4242 4242 4242'.replace(" ", "");
-export const withoutFundsCard = '4111 4111 4111 4111'.replace(" ", "");
-export const withoutAuthorizationCard = '4000 4000 4000 4000'.replace(" ", "");
+export const validCard = '4509 5645 1232'.replaceAll(" ", "");
+export const withoutFundsCard = '4111 4111 4111 4111'.replaceAll(" ", "");
+export const withoutAuthorizationCard = '4000 4000 4000 4000'.replaceAll(" ", "");
 
 type Data = {
     data: any;
@@ -21,7 +21,6 @@ type Data = {
     error: string;
     message: string;
 }
-
 
 export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
 

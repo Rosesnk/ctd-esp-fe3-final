@@ -10,10 +10,10 @@ interface BodySingleProps extends PropsWithChildren {
 
 const BodySingle: FC<BodySingleProps> = ({title, containerProps, children}: BodySingleProps) => {
     return (
-            <Container maxWidth="xl" {...containerProps}>
-                <Stack direction={"column"} display={'flex'} justifyContent={'center'}>
+            <Container maxWidth="lg" {...containerProps} >
+                <Stack direction={"column"} display={'flex'} justifyContent={'center'} >
                     {title &&
-                        <Typography variant={"h2"} my={2} textAlign={'center'} fontSize={28} fontWeight={600}>
+                        <Typography variant={"h2"} my={3} textAlign={'center'} fontSize={50} fontWeight={600}>
                             {title}
                         </Typography>
                     }
